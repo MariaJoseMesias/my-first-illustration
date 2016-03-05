@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def illustration_list(request):
+    return render(request, 'pepaillustration/illustration_list.html', {})
