@@ -1,4 +1,14 @@
-<html>
-    <p>Hola!</p>
-    <p>lo logramos!</p>
-</html>
+<div>
+    <h1><a href="/">Django Girls Blog</a></h1>
+</div>
+
+{% for illustration in illustrations %}
+    <div>
+        <p>published: {{ illustration.published_date }}</p>
+        <h1><a href="">{{ illustration.title }}</a></h1>
+        <p>{{ illustration.description }}</p>
+        <p>{{ illustration.technique }}</p>
+        <p><a href="{{ illustration.image_url }}">{{ illustration.title }}</a></p>
+
+    </div>
+{% endfor %}
